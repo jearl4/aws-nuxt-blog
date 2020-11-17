@@ -36,7 +36,7 @@ export default {
   },
   head () {
     return {
-      title: 'Prismic Nuxt.js Blog',
+      title: 'Document Object',
     }
   },
   async asyncData({ $prismic, error }) {
