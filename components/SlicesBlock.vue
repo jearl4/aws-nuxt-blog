@@ -15,6 +15,10 @@
             <template v-else-if="slice.slice_type === 'image_with_caption'">
                 <image-caption-slice :slice="slice"></image-caption-slice>
             </template>
+            <!-- embedded code slice template -->
+            <template v-else-if="slice.slice_type === 'embed-slice'">
+                <embed-slice :slice="slice"></embed-slice>
+            </template>
         </section>
     </section>
 </template>
