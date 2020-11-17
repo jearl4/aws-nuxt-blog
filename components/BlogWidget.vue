@@ -12,7 +12,7 @@
 import LinkResolver from "~/plugins/link-resolver.js"
 
 export default {
-  props: ['post', 'blog_post_v2'],
+  props: ['post'],
   data: function() {
     return {
       link: '',
