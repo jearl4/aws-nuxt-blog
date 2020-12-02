@@ -44,7 +44,8 @@ export default {
    */
   modules: [
     // https://prismic-nuxt.js.org/
-    "@nuxtjs/prismic"
+    "@nuxtjs/prismic",
+    "@nuxtjs/google-analytics"
   ],
 
   prismic: {
@@ -67,5 +68,17 @@ export default {
 
   generate: {
     fallback: "404.html" // Netlify reads a 404.html, Nuxt will load as an SPA
+  },
+  
+  googleAnalytics: {
+    id: process.env.GOOGLE_ANALYTICS_ID,
+    checkDuplicatedScript: true,
+    dev:false
+  },
+
+  publicRuntimeConfig: {
+    googleAnalytics: {
+      id: process.env.GOOGLE_ANALYTICS_ID
+    }
   }
 };
