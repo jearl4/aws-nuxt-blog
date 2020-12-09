@@ -26,12 +26,6 @@
         "thumbnails": [],
         "label": "Image"
       }
-    },
-    "twitter": {
-      "type": "Link",
-      "config": {
-        "label": "twitter"
-      }
     }
   }
 }
