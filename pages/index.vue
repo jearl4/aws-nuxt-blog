@@ -8,7 +8,10 @@
       </h1>
       <!-- Template for page description -->
       <p class="blog-description">{{ $prismic.asText(homepageContent.description) }}</p>
-      
+      <!-- Template for social media links -->
+      <p>{{ $prismic.asLink(homepageContent.twitter)}}</p>
+
+
       <!-- Check blog posts exist -->
       <div v-if="posts.length !== 0" class="blog-main">
         <!-- Template for blog posts -->
