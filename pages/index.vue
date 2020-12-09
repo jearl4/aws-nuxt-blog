@@ -5,17 +5,29 @@
         class="blog-avatar"
         :style="{ backgroundImage: 'url(' + image + ')' }"
       ></div>
+      
+      <!-- social media links -->
+      <a
+        href="https://twitter.com/jt_earl?ref_src=twsrc%5Etfw"
+        class="twitter-follow-button"
+        data-show-count="false"
+        data-show-screen-name="false"
+        >Follow @jt_earl</a
+      >
+      <script
+        async
+        src="https://platform.twitter.com/widgets.js"
+        charset="utf-8"
+      ></script>
+
       <!-- Template for page title -->
       <h1 class="blog-title">
         {{ $prismic.asText(homepageContent.headline) }}
       </h1>
+
       <!-- Template for page description -->
       <p class="blog-description">
         {{ $prismic.asText(homepageContent.description) }}
-      </p>
-      <!-- Template for social media links -->
-      <p class="blog-twitter">
-        {{ $prismic.asLink(homepageContent.twitter) }}
       </p>
 
       <!-- Check blog posts exist -->
