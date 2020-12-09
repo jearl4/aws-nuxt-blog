@@ -1,18 +1,44 @@
 <template>
   <section class="home">
     <article>
-      <div class="blog-avatar" :style="{ backgroundImage: 'url(' + image + ')' }" ></div>
+      <div
+        class="blog-avatar"
+        :style="{ backgroundImage: 'url(' + image + ')' }"
+      ></div>
+
+      <!-- social media links -->
+      <a
+        href="https://twitter.com/jt_earl?ref_src=twsrc%5Etfw"
+        class="twitter-follow-button"
+        data-show-count="false"
+        data-show-screen-name="false"
+        >Follow @jt_earl</a
+      >
+      <script
+        async
+        src="https://platform.twitter.com/widgets.js"
+        charset="utf-8"
+      ></script>
+
       <!-- Template for page title -->
       <h1 class="blog-title">
         {{ $prismic.asText(homepageContent.headline) }}
       </h1>
+
       <!-- Template for page description -->
-      <p class="blog-description">{{ $prismic.asText(homepageContent.description) }}</p>
-      
+      <p class="blog-description">
+        {{ $prismic.asText(homepageContent.description) }}
+      </p>
+
       <!-- Check blog posts exist -->
       <div v-if="posts.length !== 0" class="blog-main">
         <!-- Template for blog posts -->
-        <section v-for="post in posts" :key="post.id" v-bind:post="post" class="blog-post">
+        <section
+          v-for="post in posts"
+          :key="post.id"
+          v-bind:post="post"
+          class="blog-post"
+        >
           <!-- Here :post="post" passes the data to the component -->
           <blog-widget :post="post"></blog-widget>
         </section>
@@ -27,41 +53,41 @@
 
 <script>
 // Importing blog posts widget
-import BlogWidget from '~/components/BlogWidget.vue'
+import BlogWidget from "~/components/BlogWidget.vue";
 
 export default {
-  name: 'Home',
+  name: "Home",
   components: {
     BlogWidget
   },
-  head () {
+  head() {
     return {
-      title: 'Document Object',
-    }
+      title: "Document Object"
+    };
   },
   async asyncData({ $prismic, error }) {
-    try{
+    try {
       // Query to get blog home content
-      const homepageContent = (await $prismic.api.getSingle('blog_home')).data
+      const homepageContent = (await $prismic.api.getSingle("blog_home")).data;
 
       // Query to get posts content to preview
       const blogPosts = await $prismic.api.query(
         $prismic.predicates.at("document.type", "post"),
-        { orderings : '[my.post.date desc]' }
-      )
+        { orderings: "[my.post.date desc]" }
+      );
 
       // Returns data to be used in template
       return {
         homepageContent,
         posts: blogPosts.results,
-        image: homepageContent.image.url,
-      }
+        image: homepageContent.image.url
+      };
     } catch (e) {
       // Returns error page
-      error({ statusCode: 404, message: 'Page not found' })
+      error({ statusCode: 404, message: "Page not found" });
     }
-  },
-}
+  }
+};
 </script>
 
 <style lang="sass" scoped>
@@ -80,10 +106,10 @@ export default {
     font-size: 18px
     color: #9A9A9A
     line-height: 30px
-    margin-bottom: 3rem
-    padding-bottom: 3rem
     font-family: 'Lato', sans-serif
     border-bottom: 1px solid #DADADA
+    margin-bottom: 3rem
+    padding-bottom: 3rem
 
 .blog-main
   max-width: 700px
