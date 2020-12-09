@@ -5,7 +5,7 @@
         class="blog-avatar"
         :style="{ backgroundImage: 'url(' + image + ')' }"
       ></div>
-      
+
       <!-- social media links -->
       <a
         href="https://twitter.com/jt_earl?ref_src=twsrc%5Etfw"
@@ -107,7 +107,6 @@ export default {
     color: #9A9A9A
     line-height: 30px
     font-family: 'Lato', sans-serif
-  .blog-twitter
     border-bottom: 1px solid #DADADA
     margin-bottom: 3rem
     padding-bottom: 3rem
