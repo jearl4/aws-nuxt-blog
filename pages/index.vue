@@ -6,7 +6,7 @@
         :style="{ backgroundImage: 'url(' + image + ')' }"
       ></div>
 
-      <!-- social media links -->
+   
       <a
         href="https://twitter.com/jt_earl?ref_src=twsrc%5Etfw"
         class="twitter-follow-button"
@@ -20,17 +20,15 @@
         charset="utf-8"
       ></script>
 
-      <!-- Template for page title -->
       <h1 class="blog-title">
         {{ $prismic.asText(homepageContent.headline) }}
       </h1>
 
-      <!-- Template for page description -->
+   
       <p class="blog-description">
         {{ $prismic.asText(homepageContent.description) }}
       </p>
 
-      <!-- Check blog posts exist -->
       <div v-if="posts.length !== 0" class="blog-main">
         <!-- Template for blog posts -->
         <section
@@ -43,7 +41,7 @@
           <blog-widget :post="post"></blog-widget>
         </section>
       </div>
-      <!-- If no blog posts return message -->
+      
       <div v-else class="blog-main">
         <p>No Posts published at this time.</p>
       </div>
