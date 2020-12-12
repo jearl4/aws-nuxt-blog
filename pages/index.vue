@@ -6,42 +6,32 @@
         :style="{ backgroundImage: 'url(' + image + ')' }"
       ></div>
 
-   
       <a
         href="https://twitter.com/jt_earl?ref_src=twsrc%5Etfw"
-        class="twitter-follow-button"
-        data-show-count="false"
-        data-show-screen-name="false"
-        >Follow @jt_earl</a
-      >
-      <script
-        async
-        src="https://platform.twitter.com/widgets.js"
-        charset="utf-8"
-      ></script>
+        class="fa fa-twitter"
+      ></a>
+
+      <a href="https://www.linkedin.com/in/john-t-earl-114a1563" class="fa fa-linkedin"></a>
 
       <h1 class="blog-title">
         {{ $prismic.asText(homepageContent.headline) }}
       </h1>
 
-   
       <p class="blog-description">
         {{ $prismic.asText(homepageContent.description) }}
       </p>
 
       <div v-if="posts.length !== 0" class="blog-main">
-        <!-- Template for blog posts -->
         <section
           v-for="post in posts"
           :key="post.id"
           v-bind:post="post"
           class="blog-post"
         >
-          <!-- Here :post="post" passes the data to the component -->
           <blog-widget :post="post"></blog-widget>
         </section>
       </div>
-      
+
       <div v-else class="blog-main">
         <p>No Posts published at this time.</p>
       </div>
@@ -108,6 +98,13 @@ export default {
     border-bottom: 1px solid #DADADA
     margin-bottom: 3rem
     padding-bottom: 3rem
+  .fa:hover
+    opacity: 0.7
+  .fa-twitter:hover
+    color:#55ACEE
+  .fa-linkedin:hover
+    color:#0072b1
+
 
 .blog-main
   max-width: 700px
