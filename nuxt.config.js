@@ -20,6 +20,11 @@ export default {
       {
         rel: "stylesheet",
         href: "https://fonts.googleapis.com/css?family=Lato:300,400,700,900"
+      },
+      {
+        rel: "stylesheet",
+        href:
+          "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
       }
     ]
   },
@@ -69,11 +74,11 @@ export default {
   generate: {
     fallback: "404.html" // Netlify reads a 404.html, Nuxt will load as an SPA
   },
-  
+
   googleAnalytics: {
     id: process.env.GOOGLE_ANALYTICS_ID,
     checkDuplicatedScript: true,
-    dev:false
+    dev: false
   },
 
   publicRuntimeConfig: {
