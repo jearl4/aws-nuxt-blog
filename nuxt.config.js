@@ -63,7 +63,18 @@ export default {
     gzip: false,
     exclude: [],
     routes: [
-      '/blog/*'
+      {
+        url: '/blog/',
+        priority: 1
+      },
+      {
+        url: '/blog/sql-injection-nodejs/',
+        priority: .4
+      },
+      {
+        url: '/blog/aws-certified-having-a-life/',
+        priority: .4
+      }
     ]
   },
 
