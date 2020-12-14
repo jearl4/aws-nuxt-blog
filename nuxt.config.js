@@ -59,7 +59,23 @@ export default {
    ** Sitemap config
    */
   sitemap: {
-    hostname: "https://www.documentobject.com"
+    hostname: "https://www.documentobject.com",
+    gzip: false,
+    exclude: [],
+    routes: [
+      {
+        url: '/blog/',
+        priority: 1
+      },
+      {
+        url: '/blog/sql-injection-nodejs/',
+        priority: .4
+      },
+      {
+        url: '/blog/aws-certified-having-a-life/',
+        priority: .4
+      }
+    ]
   },
 
   prismic: {
