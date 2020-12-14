@@ -59,7 +59,7 @@ export default {
    ** Sitemap config
    */
   sitemap: {
-    // options
+    hostname: "https://www.documentobject.com"
   },
 
   prismic: {
