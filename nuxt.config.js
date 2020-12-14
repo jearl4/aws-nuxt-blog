@@ -12,7 +12,8 @@ export default {
       {
         hid: "description",
         name: "description",
-        content: "Document Object"
+        content:
+          "Document Object blog on technology, coding, and life as a software engineer"
       }
     ],
     link: [

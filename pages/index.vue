@@ -11,7 +11,10 @@
         class="fa fa-twitter"
       ></a>
 
-      <a href="https://www.linkedin.com/in/john-t-earl-114a1563" class="fa fa-linkedin"></a>
+      <a
+        href="https://www.linkedin.com/in/john-t-earl-114a1563"
+        class="fa fa-linkedin"
+      ></a>
 
       <h1 class="blog-title">
         {{ $prismic.asText(homepageContent.headline) }}
