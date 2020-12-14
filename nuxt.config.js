@@ -59,7 +59,12 @@ export default {
    ** Sitemap config
    */
   sitemap: {
-    hostname: "https://www.documentobject.com"
+    hostname: "https://www.documentobject.com",
+    gzip: false,
+    exclude: [],
+    routes: [
+      '/blog/*'
+    ]
   },
 
   prismic: {
