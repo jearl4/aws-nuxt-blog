@@ -51,8 +51,16 @@ export default {
   modules: [
     // https://prismic-nuxt.js.org/
     "@nuxtjs/prismic",
-    "@nuxtjs/google-analytics"
+    "@nuxtjs/google-analytics",
+    "@nuxtjs/sitemap"
   ],
+
+  /*
+   ** Sitemap config
+   */
+  sitemap: {
+    hostname: "https://www.documentobject.com"
+  },
 
   prismic: {
     endpoint: "https://aws-nuxt-blog.cdn.prismic.io/api/v2",
