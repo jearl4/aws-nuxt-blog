@@ -61,18 +61,19 @@ export default {
   sitemap: {
     hostname: "https://www.documentobject.com",
     gzip: false,
+    trailingSlash: true,
     exclude: [],
     routes: [
       {
-        url: '/blog/',
+        url: '/blog',
         priority: 1
       },
       {
-        url: '/blog/sql-injection-nodejs/',
+        url: '/blog/sql-injection-nodejs',
         priority: .4
       },
       {
-        url: '/blog/aws-certified-having-a-life/',
+        url: '/blog/aws-certified-having-a-life',
         priority: .4
       }
     ]
