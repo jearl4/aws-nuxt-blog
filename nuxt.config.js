@@ -65,10 +65,6 @@ export default {
     exclude: [],
     routes: [
       {
-        url: '/blog',
-        priority: 1
-      },
-      {
         url: '/blog/sql-injection-nodejs',
         priority: .4
       },
