@@ -1,9 +1,5 @@
 export default {
   target: "static",
-
-  /*
-   ** Headers of the page
-   */
   head: {
     title: "Document Object",
     meta: [
@@ -64,10 +60,6 @@ export default {
     trailingSlash: true,
     exclude: [],
     routes: [
-      {
-        url: '/blog',
-        priority: 1
-      },
       {
         url: '/blog/sql-injection-nodejs',
         priority: .4
