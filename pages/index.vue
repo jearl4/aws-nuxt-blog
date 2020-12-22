@@ -1,4 +1,5 @@
 <template>
+<v-app>
   <section class="home">
     <article>
       <div
@@ -40,6 +41,7 @@
       </div>
     </article>
   </section>
+</v-app>
 </template>
 
 <script>
