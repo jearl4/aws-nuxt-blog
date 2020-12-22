@@ -5,7 +5,7 @@
         <v-list-item-icon>
           <v-icon>mdi-home</v-icon>
         </v-list-item-icon>
-        <v-list-item-title class="navTitleText">
+        <v-list-item-title class="nav-title-text">
           Document Object
         </v-list-item-title>
       </v-list-item>
@@ -16,25 +16,25 @@
         <v-list-item-icon>
           <v-icon class="aws-icon">mdi-aws</v-icon>
         </v-list-item-icon>
-        <v-list-item-title class="navTitleText"
-          >Cloud Articles</v-list-item-title
-        >
+        <v-list-item-title class="nav-title-text">
+          Cloud Articles
+        </v-list-item-title>
       </v-list-item>
       <v-list-item link>
         <v-list-item-icon>
           <v-icon class="typescript-icon">mdi-language-typescript</v-icon>
         </v-list-item-icon>
-        <v-list-item-title class="navTitleText"
-          >TypeScript Articles</v-list-item-title
-        >
+        <v-list-item-title class="nav-title-text">
+          TypeScript Articles
+        </v-list-item-title>
       </v-list-item>
       <v-list-item link>
         <v-list-item-icon>
           <v-icon class="java-icon">mdi-language-java</v-icon>
         </v-list-item-icon>
-        <v-list-item-title class="navTitleText"
-          >Java Articles</v-list-item-title
-        >
+        <v-list-item-title class="nav-title-text">
+          Java Articles
+        </v-list-item-title>
       </v-list-item>
     </v-list>
   </v-navigation-drawer>
@@ -47,7 +47,8 @@ export default {
 </script>
 
 <style lang="sass" scoped>
-.navTitleText
+.nav-title-text
+
   padding-left: 1em
 
 .aws-icon
