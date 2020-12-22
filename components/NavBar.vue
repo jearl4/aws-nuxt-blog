@@ -14,7 +14,7 @@
     <v-list nav dense>
       <v-list-item link>
         <v-list-item-icon>
-          <v-icon>mdi-aws</v-icon>
+          <v-icon class="aws-icon">mdi-aws</v-icon>
         </v-list-item-icon>
         <v-list-item-title class="navTitleText"
           >Cloud Articles</v-list-item-title
@@ -22,7 +22,7 @@
       </v-list-item>
       <v-list-item link>
         <v-list-item-icon>
-          <v-icon>mdi-language-typescript</v-icon>
+          <v-icon class="typescript-icon">mdi-language-typescript</v-icon>
         </v-list-item-icon>
         <v-list-item-title class="navTitleText"
           >TypeScript Articles</v-list-item-title
@@ -30,7 +30,7 @@
       </v-list-item>
       <v-list-item link>
         <v-list-item-icon>
-          <v-icon>mdi-language-java</v-icon>
+          <v-icon class="java-icon">mdi-language-java</v-icon>
         </v-list-item-icon>
         <v-list-item-title class="navTitleText"
           >Java Articles</v-list-item-title
@@ -49,4 +49,13 @@ export default {
 <style lang="sass" scoped>
 .navTitleText
   padding-left: 1em
+
+.aws-icon
+  color: #FF9900
+
+.typescript-icon
+  color: #007ACC
+
+.java-icon
+  color: #5382A1
 </style>
