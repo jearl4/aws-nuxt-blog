@@ -1,5 +1,5 @@
 <template>
-  <v-navigation-drawer permanent expand-on-hover>
+  <v-navigation-drawer permanent expand-on-hover app>
     <v-list>
       <NuxtLink to="/">
         <v-list-item link>
