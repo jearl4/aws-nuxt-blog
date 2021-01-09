@@ -65,7 +65,7 @@ export default {
 
       // Query to get posts content to preview
       const blogPosts = await $prismic.api.query(
-        $prismic.predicates.at("document.type", "post"),
+        $prismic.predicates.at("document.tags", ["cloud"]),
         { orderings: "[my.post.date desc]" }
       );
 
