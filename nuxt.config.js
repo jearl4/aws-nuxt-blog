@@ -45,10 +45,10 @@ export default {
    ** Nuxt.js modules
    */
   modules: [
-    // https://prismic-nuxt.js.org/
     "@nuxtjs/prismic",
     "@nuxtjs/google-analytics",
-    "@nuxtjs/sitemap"
+    "@nuxtjs/sitemap",
+    '@nuxtjs/vuetify'
   ],
 
   /*
