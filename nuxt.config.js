@@ -61,6 +61,18 @@ export default {
     exclude: [],
     routes: [
       {
+        url: '/aws',
+        priority: 1
+      },
+      {
+        url: '/typescript',
+        priority: 1
+      },
+      {
+        url: '/java',
+        priority: 1
+      },
+      {
         url: '/blog/sql-injection-nodejs',
         priority: .4
       },
