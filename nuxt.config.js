@@ -73,12 +73,20 @@ export default {
         priority: 1
       },
       {
+        url: '/angular',
+        priority: 1
+      },
+      {
         url: '/blog/sql-injection-nodejs',
         priority: .4
       },
       {
         url: '/blog/aws-certified-having-a-life',
         priority: .4
+      },
+      {
+        url: '/blog/java-spring-beans',
+        priority: .2
       }
     ]
   },

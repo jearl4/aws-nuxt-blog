@@ -34,6 +34,16 @@
           </v-list-item-title>
         </v-list-item>
       </NuxtLink>
+      <NuxtLink to="/angular">
+        <v-list-item link>
+          <v-list-item-icon>
+            <v-icon class="angular-icon">mdi-angular</v-icon>
+          </v-list-item-icon>
+          <v-list-item-title class="nav-title-text">
+            Angular Articles
+          </v-list-item-title>
+        </v-list-item>
+      </NuxtLink>
       <NuxtLink to="/java">
         <v-list-item link>
           <v-list-item-icon>
@@ -66,4 +76,7 @@ export default {
 
 .java-icon
   color: #5382A1
+
+.angular-icon
+  color: #DD1B16
 </style>
