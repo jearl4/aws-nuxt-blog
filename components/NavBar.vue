@@ -1,5 +1,5 @@
 <template>
-  <v-navigation-drawer permanent expand-on-hover app>
+  <v-navigation-drawer expand-on-hover app :permanent="$vuetify.breakpoint.mdAndUp"> <!-- 850px :mobile-breakpoint="mdAndAbove"-->
     <v-list>
       <NuxtLink to="/">
         <v-list-item link>
