@@ -1,24 +1,24 @@
 <template>
   <div>
-    <nav-bar/>
+    <nav-bar />
     <nuxt />
-    <footer-prismic/>
+    <footer-prismic />
   </div>
 </template>
 
 <script>
-import FooterPrismic from '~/components/FooterPrismic.vue'
-import NavBar from '../components/NavBar.vue'
+import FooterPrismic from "~/components/FooterPrismic.vue";
+import NavBar from "../components/NavBar.vue";
 
 export default {
   components: {
     FooterPrismic,
     NavBar
   },
-  head () {
+  head() {
     return {
-      title: 'Document Object',
-    }
+      title: "Document Object"
+    };
   }
-}
+};
 </script>
