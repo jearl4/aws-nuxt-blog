@@ -48,7 +48,8 @@ export default {
     "@nuxtjs/prismic",
     "@nuxtjs/google-analytics",
     "@nuxtjs/sitemap",
-    '@nuxtjs/vuetify'
+    '@nuxtjs/vuetify',
+    '@nuxtjs/google-adsense'
   ],
 
   /*
@@ -117,6 +118,10 @@ export default {
     id: process.env.GOOGLE_ANALYTICS_ID,
     checkDuplicatedScript: true,
     dev: false
+  },
+
+  'google-adsense':{
+    id: process.env.GOOGLE_ADSENSE_ID
   },
 
   publicRuntimeConfig: {
