@@ -85,6 +85,7 @@ export default {
 
 <style lang="sass" scoped>
 .home
+  padding-top: 75px
   max-width: 700px
   margin: auto
   text-align: center
