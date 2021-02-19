@@ -1,10 +1,10 @@
 <template>
   <nav>
-    <v-app-bar dense clipped-left>
+    <v-app-bar app dense clipped-left dark>
       <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
       <!-- <v-app-bar-title>Document Object</v-app-bar-title> -->
     </v-app-bar>
-    <v-navigation-drawer app v-model="drawer" hide-overlay clipped-left>
+    <v-navigation-drawer app v-model="drawer" hide-overlay clipped dark>
       <v-list>
         <NuxtLink to="/">
           <v-list-item link>
