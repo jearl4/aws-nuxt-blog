@@ -1,9 +1,11 @@
 <template>
-  <div>
-    <nav-bar />
-    <nuxt />
-    <footer-prismic />
-  </div>
+  <v-app>
+    <div>
+      <nav-bar />
+      <nuxt />
+      <footer-prismic />
+    </div>
+  </v-app>
 </template>
 
 <script>

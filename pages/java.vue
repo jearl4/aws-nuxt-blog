@@ -85,8 +85,9 @@ export default {
 
 <style lang="sass" scoped>
 .home
+  padding-top: 75px
   max-width: 700px
-  margin: auto
+  margin: 0 auto
   text-align: center
   .blog-avatar
     height: 140px
@@ -132,7 +133,7 @@ export default {
 
 @media (max-width: 767px)
   .home
-    padding: 0 20px
+    padding: 75 20px
   .blog-main
     padding: 0
     font-size: 18px
