@@ -1,7 +1,11 @@
 <template>
   <nav>
-    <v-app-bar app dense clipped-left dark>
+    <v-app-bar app dense clipped-left dark elevate-on-scroll>
       <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
+      <v-spacer></v-spacer>
+      <a href="https://www.patreon.com/jearl4">
+        <v-icon right>mdi-patreon</v-icon>
+      </a>
       <!-- <v-app-bar-title>Document Object</v-app-bar-title> -->
     </v-app-bar>
     <v-navigation-drawer app v-model="drawer" hide-overlay clipped dark>
@@ -22,7 +26,7 @@
         <NuxtLink to="/aws">
           <v-list-item link>
             <v-list-item-icon>
-              <v-icon class="aws-icon">mdi-aws</v-icon>
+              <v-icon class="aws-icon" large>mdi-aws</v-icon>
             </v-list-item-icon>
             <v-list-item-title class="nav-title-text">
               Cloud Articles
@@ -32,7 +36,9 @@
         <NuxtLink to="/typescript">
           <v-list-item link>
             <v-list-item-icon>
-              <v-icon class="typescript-icon">mdi-language-typescript</v-icon>
+              <v-icon class="typescript-icon" large
+                >mdi-language-typescript</v-icon
+              >
             </v-list-item-icon>
             <v-list-item-title class="nav-title-text">
               TypeScript Articles
@@ -42,7 +48,7 @@
         <NuxtLink to="/angular">
           <v-list-item link>
             <v-list-item-icon>
-              <v-icon class="angular-icon">mdi-angular</v-icon>
+              <v-icon class="angular-icon" large>mdi-angular</v-icon>
             </v-list-item-icon>
             <v-list-item-title class="nav-title-text">
               Angular Articles
@@ -52,7 +58,7 @@
         <NuxtLink to="/java">
           <v-list-item link>
             <v-list-item-icon>
-              <v-icon class="java-icon">mdi-language-java</v-icon>
+              <v-icon class="java-icon" large>mdi-language-java</v-icon>
             </v-list-item-icon>
             <v-list-item-title class="nav-title-text">
               Java Articles
@@ -72,6 +78,9 @@ export default {
 </script>
 
 <style lang="sass" scoped>
+.v-list-item
+  padding: 5px 5px
+
 .nav-title-text
   padding-left: 1em
 
@@ -82,7 +91,7 @@ export default {
   color: #007ACC
 
 .java-icon
-  color: #5382A1
+  color: #ED8B00
 
 .angular-icon
   color: #DD1B16
