@@ -2,6 +2,7 @@
   <nav>
     <v-app-bar app dense clipped-left dark elevate-on-scroll>
       <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
+      <v-spacer></v-spacer>
       <a href="https://www.patreon.com/jearl4">
         <v-icon right>mdi-patreon</v-icon>
       </a>
