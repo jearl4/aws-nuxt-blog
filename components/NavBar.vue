@@ -1,6 +1,6 @@
 <template>
   <nav>
-    <v-app-bar app dense clipped-left dark>
+    <v-app-bar app dense clipped-left dark elevate-on-scroll>
       <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
       <!-- <v-app-bar-title>Document Object</v-app-bar-title> -->
     </v-app-bar>
@@ -82,7 +82,7 @@ export default {
   color: #007ACC
 
 .java-icon
-  color: #5382A1
+  color: #ED8B00
 
 .angular-icon
   color: #DD1B16
