@@ -87,7 +87,7 @@ export default {
 .home
   padding-top: 75px
   max-width: 700px
-  margin: auto
+  margin: 0 auto
   text-align: center
   .blog-avatar
     height: 140px
@@ -95,7 +95,7 @@ export default {
     border-radius: 50%
     background-position: center
     background-size: cover
-    margin: 1em auto
+    margin: 0 auto
   .blog-description
     font-size: 18px
     color: #9A9A9A
