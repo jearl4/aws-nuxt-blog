@@ -78,16 +78,8 @@ export default {
         priority: 1
       },
       {
-        url: "/blog/sql-injection-nodejs",
-        priority: 0.4
-      },
-      {
-        url: "/blog/aws-certified-having-a-life",
-        priority: 0.4
-      },
-      {
-        url: "/blog/java-spring-beans",
-        priority: 0.2
+        url: '/books',
+        priority: 1
       }
     ]
   },

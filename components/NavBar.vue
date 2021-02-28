@@ -65,6 +65,18 @@
             </v-list-item-title>
           </v-list-item>
         </NuxtLink>
+        <NuxtLink to="/books">
+          <v-list-item link>
+            <v-list-item-icon>
+              <v-icon class="book-icon" large
+                >mdi-bookshelf </v-icon
+              >
+            </v-list-item-icon>
+            <v-list-item-title class="nav-title-text">
+              Recommend Reading
+            </v-list-item-title>
+          </v-list-item>
+        </NuxtLink>
       </v-list>
     </v-navigation-drawer>
   </nav>
@@ -86,6 +98,9 @@ export default {
 
 .aws-icon
   color: #FF9900
+
+.book-icon
+  color: #A9A9A9
 
 .typescript-icon
   color: #007ACC
