@@ -111,9 +111,8 @@ export default {
     checkDuplicatedScript: true,
     dev: false
   },
-
-  'google-adsense':{
-    id: ca-pub-2357685072378273
+ "google-adsense": {
+    id: "ca-pub-2357685072378273"
   },
 
   publicRuntimeConfig: {
