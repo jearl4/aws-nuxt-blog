@@ -48,8 +48,8 @@ export default {
     "@nuxtjs/prismic",
     "@nuxtjs/google-analytics",
     "@nuxtjs/sitemap",
-    '@nuxtjs/vuetify',
-    '@nuxtjs/google-adsense'
+    "@nuxtjs/vuetify",
+    "@nuxtjs/google-adsense"
   ],
 
   /*
@@ -62,23 +62,23 @@ export default {
     exclude: [],
     routes: [
       {
-        url: '/aws',
+        url: "/aws",
         priority: 1
       },
       {
-        url: '/typescript',
+        url: "/typescript",
         priority: 1
       },
       {
-        url: '/java',
+        url: "/java",
         priority: 1
       },
       {
-        url: '/angular',
+        url: "/angular",
         priority: 1
       },
       {
-        url: '/books',
+        url: "/books",
         priority: 1
       }
     ]
@@ -113,7 +113,7 @@ export default {
   },
 
   'google-adsense':{
-    id: process.env.GOOGLE_ADSENSE_ID
+    id: ca-pub-2357685072378273
   },
 
   publicRuntimeConfig: {
