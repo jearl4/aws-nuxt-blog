@@ -78,7 +78,7 @@ export default {
         priority: 1
       },
       {
-        url: '/books',
+        url: "/books",
         priority: 1
       }
     ]
@@ -111,8 +111,7 @@ export default {
     checkDuplicatedScript: true,
     dev: false
   },
-
-  "google-adsense": {
+ "google-adsense": {
     id: "ca-pub-2357685072378273"
   },
 
