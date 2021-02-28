@@ -48,8 +48,8 @@ export default {
     "@nuxtjs/prismic",
     "@nuxtjs/google-analytics",
     "@nuxtjs/sitemap",
-    '@nuxtjs/vuetify',
-    '@nuxtjs/google-adsense'
+    "@nuxtjs/vuetify",
+    "@nuxtjs/google-adsense"
   ],
 
   /*
@@ -62,32 +62,32 @@ export default {
     exclude: [],
     routes: [
       {
-        url: '/aws',
+        url: "/aws",
         priority: 1
       },
       {
-        url: '/typescript',
+        url: "/typescript",
         priority: 1
       },
       {
-        url: '/java',
+        url: "/java",
         priority: 1
       },
       {
-        url: '/angular',
+        url: "/angular",
         priority: 1
       },
       {
-        url: '/blog/sql-injection-nodejs',
-        priority: .4
+        url: "/blog/sql-injection-nodejs",
+        priority: 0.4
       },
       {
-        url: '/blog/aws-certified-having-a-life',
-        priority: .4
+        url: "/blog/aws-certified-having-a-life",
+        priority: 0.4
       },
       {
-        url: '/blog/java-spring-beans',
-        priority: .2
+        url: "/blog/java-spring-beans",
+        priority: 0.2
       }
     ]
   },
@@ -120,8 +120,8 @@ export default {
     dev: false
   },
 
-  'google-adsense':{
-    id: process.env.GOOGLE_ADSENSE_ID
+  "google-adsense": {
+    id: "ca-pub-2357685072378273"
   },
 
   publicRuntimeConfig: {
