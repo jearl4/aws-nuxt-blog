@@ -33,6 +33,7 @@
             class="blog-post"
           >
             <blog-widget :post="post"></blog-widget>
+            <adsbygoogle ad-slot="6242165448" />
           </section>
         </div>
 
@@ -40,9 +41,6 @@
           <p>No Posts published at this time.</p>
         </div>
       </article>
-    </section>
-    <section>
-      <adsbygoogle ad-slot="6242165448" />
     </section>
   </v-app>
 </template>
