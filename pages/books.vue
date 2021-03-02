@@ -1,47 +1,50 @@
 <template>
-<v-app>
-  <section class="home">
-    <article>
-      <div
-        class="blog-avatar"
-        :style="{ backgroundImage: 'url(' + image + ')' }"
-      ></div>
+  <v-app>
+    <section class="home">
+      <article>
+        <div
+          class="blog-avatar"
+          :style="{ backgroundImage: 'url(' + image + ')' }"
+        ></div>
 
-      <a
-        href="https://twitter.com/jt_earl?ref_src=twsrc%5Etfw"
-        class="fa fa-twitter"
-      ></a>
+        <a
+          href="https://twitter.com/jt_earl?ref_src=twsrc%5Etfw"
+          class="fa fa-twitter"
+        ></a>
 
-      <a
-        href="https://www.linkedin.com/in/john-t-earl-114a1563"
-        class="fa fa-linkedin"
-      ></a>
+        <a
+          href="https://www.linkedin.com/in/john-t-earl-114a1563"
+          class="fa fa-linkedin"
+        ></a>
 
-      <h1 class="blog-title">
-        {{ $prismic.asText(homepageContent.headline) }}
-      </h1>
+        <h1 class="blog-title">
+          {{ $prismic.asText(homepageContent.headline) }}
+        </h1>
 
-      <p class="blog-description">
-        {{ $prismic.asText(homepageContent.description) }}
-      </p>
+        <p class="blog-description">
+          {{ $prismic.asText(homepageContent.description) }}
+        </p>
 
-      <div v-if="posts.length !== 0" class="blog-main">
-        <section
-          v-for="post in posts"
-          :key="post.id"
-          v-bind:post="post"
-          class="blog-post"
-        >
-          <blog-widget :post="post"></blog-widget>
-        </section>
-      </div>
+        <div v-if="posts.length !== 0" class="blog-main">
+          <section
+            v-for="post in posts"
+            :key="post.id"
+            v-bind:post="post"
+            class="blog-post"
+          >
+            <blog-widget :post="post"></blog-widget>
+          </section>
+        </div>
 
-      <div v-else class="blog-main">
-        <p>No Posts published at this time.</p>
-      </div>
-    </article>
-  </section>
-</v-app>
+        <div v-else class="blog-main">
+          <p>No Posts published at this time.</p>
+        </div>
+      </article>
+    </section>
+    <section>
+      <adsbygoogle ad-slot="6242165448" />
+    </section>
+  </v-app>
 </template>
 
 <script>
