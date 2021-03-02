@@ -1,5 +1,6 @@
 <template>
 <v-app>
+  <adsbygoogle ad-slot="6242165448" />
   <section class="home">
     <article>
       <div
@@ -33,6 +34,7 @@
           class="blog-post"
         >
           <blog-widget :post="post"></blog-widget>
+          <adsbygoogle ad-slot="6242165448" />
         </section>
       </div>
 
