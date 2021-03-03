@@ -1,6 +1,5 @@
 <template>
 <v-app>
-  <adsbygoogle ad-slot="9293309549" />
   <section class="home">
     <article>
       <div
