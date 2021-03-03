@@ -33,6 +33,7 @@
           class="blog-post"
         >
           <blog-widget :post="post"></blog-widget>
+          <adsbygoogle ad-slot="2441794884"/>
         </section>
       </div>
 
